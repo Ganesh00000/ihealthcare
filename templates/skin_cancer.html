@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Skin Cancer</title>
+</head>
+<style>
+body
+{
+background-image:url("static/©-iStock-CasarsaGuru.jpg");
+}
+.disease
+{
+font-size:200%;
+color:white;
+font-family:sans-serif;
+padding-left:100px;
+padding-top:50px;
+}
+#myfile,button
+{
+padding:10px;
+font-size:50%;
+}
+a
+{
+text-decoration:none;
+color:white;
+}
+.pt
+{
+padding:10px;
+font-size:50%;
+padding-left:50px;
+border-radius:0.5em;
+}
+</style>
+
+<body id="bod">
+
+<div class="disease">
+<h1>SKIN CANCER</h1>
+<p>STOP THE BURN, 
+HOLD THE HANDS <br>TOGETHER
+AGAINST SKIN CANCER</p>
+<ul type="disc">
+<li><a href="https://www.cancer.net/cancer-types/skin-cancer-non-melanoma/symptoms-and-signs">Symptoms</a></li>
+<li><a href="https://www.skincancer.org/skin-cancer-prevention/">Prevention</a></li>
+</ul>
+<h5>INSERT YOUR AFFECTED SKIN PIGMENT</h5>
+<form action="/predict_skin_cancer" method="POST" enctype="multipart/form-data">
+<input type="text" class="pt" name="pt_id" placeholder="Enter Patient ID"><br>
+
+<input type="file" id="myfile" name="myfile">
+<button type="submit">Generate Report</button>
+</form>
+</div>
+<script>
+var arr=["url('static/©-iStock-CasarsaGuru.jpg')","url('static/getty_185726338_20001749181884332142_129859.jpg')",
+"url('static/AdobeStock_121658798_WP2.jpg')","url('static/using-deep-learning-to-identify-melanoma-hero.width-2000.png')"];
+n=0;
+function change()
+{
+n++;
+if(n>arr.length)
+{
+n=0;
+}
+document.body.style.backgroundImage=arr[n];
+}
+setInterval(change,4000);
+</script>
+</body>
+</html>

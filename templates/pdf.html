@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>pdf</title>
+<style>
+body
+{
+font-family:sans-serif;
+padding-left:20px;
+}
+.header
+{
+color:green;
+padding-top:25px;
+}
+img
+{
+height:50%;
+width:50%;
+text-align:center;
+}
+.dr
+{
+float:right;
+}
+</style>
+</head>
+<body>
+<h1 class="header">{{data[0]}}</h1>
+<h3>Date:{{data[4]}}</h3>
+<hr>
+<br><hr>
+<div>
+<br>
+<br>
+<font color="red">Patient ID</font>:{{data[5]}}<br>
+<font color="red">Test</font>:{{data[1]}}<br>
+<font color="red">Probability +ve</font>:{{data[2]}}<br>
+<font color="red">Probability -ve</font>:{{data[3]}}<br>
+</div>
+<br><br><br><br><hr>
+<div class="dr">
+checked by:<br>
+<font color="green"><h2>{{data[6]}}</h2></font>
+{{data[7]}}, I Healthcare
+</div>
+
+
+</body>
+</html>

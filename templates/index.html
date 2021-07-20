@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>I Healthcare</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="static/bootstrap.min.css">
+     <link rel="stylesheet" href="static/font-awesome.min.css">
+     <link rel="stylesheet" href="static/animate.css">
+     <link rel="stylesheet" href="static/owl.carousel.css">
+     <link rel="stylesheet" href="static/owl.theme.default.min.css">
+
+     <link rel="stylesheet" href="static/tooplate-style.css">
+	 
+	<style>
+	.wrapper
+	{
+	width: 1170px;
+	margin: 5% auto;
+	}
+	.wrapper h2
+	{
+	text-transform:uppercase;
+	font-weight:bold;
+	text-align:left;
+	font-size:40px;
+	color:black;
+	margin:0;
+	}
+	.single-service
+	{
+	position:relative;
+	width:23%;
+	height:250px;
+	background:gray;
+	box-sizing:border-box;
+	padding:0 15px;
+	transition:.5s;
+	overflow:hidden;
+	float:left;
+	margin:0 10px;
+	margin-bottom:80px;
+	text-align:center;
+	}
+	.line
+	{
+	width:150px;
+	height:3px;
+	background:#fff;
+	margin:0 auto 60px auto;
+	}
+	.single-service p{
+	color:#262626;
+	font-size:14px;
+	}
+	.single-service h3
+	{
+	font-size:25px;
+	text-transform:uppercase;
+	letter-spacing: 1px;
+	color:#262626;
+	}
+	
+	.single-service span{
+	position:absolute;
+	top: 0;
+	left:-110%;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.7);
+	transition:.7s;
+	transform: sKewX(10deg);
+	}
+	.single-service:hover span{
+	left:110%;
+	}
+	@media(max-width:600px){
+	.wrapper{
+	width:100%;
+	}
+	.single-service{
+	width:95%;
+	margin-bottom:30px;
+	}
+	.wrapper h2{
+	font-size: 30px;
+	}
+	
+	</style>
+	
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- HEADER -->
+     <header>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-5">
+                         <p>Welcome to a AI Health Care</p>
+                    </div>
+                         
+                    <div class="col-md-8 col-sm-7 text-align-right">
+                         <span class="phone-icon"><i class="fa fa-phone"></i> +977-9866192739</span>
+                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 7 x 24 hourse</span>
+                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">shahgk0000@gmail.com</a></span>
+                    </div>
+
+               </div>
+          </div>
+     </header>
+
+
+     <!-- MENU -->
+     <section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand"><b><font color="red" size="5px">I&nbsp;&nbsp;</font></b><i class="fa fa-h-square"></i>ealthcare</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#top" class="smoothScroll">Home</a></li>
+                         <li><a href="#about" class="smoothScroll">About Us</a></li>
+                         <li><a href="#team" class="smoothScroll">Doctors</a></li>
+						 <li><a href="#services" class="smoothScroll">Services</a></li>
+                         <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+                         <li class="appointment-btn"><a href="#appointment">Donate</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- HOME -->
+     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                         <div class="owl-carousel owl-theme">
+                              <div class="item item-first">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>Let's make your life happier</h3>
+                                             <h1>Healthy Living</h1>
+                                             <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-second">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>We care for you</h3>
+                                             <h1>New Lifestyle</h1>
+                                             <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More About Us</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-third">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>We'll Go Together</h3>
+                                             <h1>Contribute for Good Cause</h1>
+                                             <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Donate</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section id="about">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                         <div class="about-info">
+                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Your </br>I&nbsp;<i class="fa fa-h-square"></i>ealthcare</h2>
+                              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                   <p>I Healthcare is fully automated AI model</p>
+                                   <p>we take care of providing you the best medication</p>
+                              </div>
+                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
+                                   <img src="static/Robot_doctor_robomate.png" class="img-responsive" alt="">
+                                   <figcaption>
+                                        <h3>Dr. Ganesh</h3>
+                                        <p>Director</p>
+                                   </figcaption>
+                              </figure>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+	 
+     <!-- TEAM -->
+     <section id="team" data-stellar-background-ratio="1">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                         <div class="about-info">
+                              <h2 class="wow fadeInUp" data-wow-delay="0.1s">Our Doctors</h2>
+                         </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                              <img src="static/Robot_doctor_robomate.png" class="img-responsive" alt="">
+
+                                   <div class="team-info">
+                                        <h3>Dr. Ganesh</h3>
+                                        <p>Radiologist</p>
+                                        
+                                   </div>
+
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                              <img src="static/QTrobot_exprssive-humanoid-robot-for-research.png" class="img-responsive" alt="">
+
+                                   <div class="team-info">
+                                        <h3>Dr. Santosh</h3>
+                                        <p>Neurologist</p>
+                                        
+                                   </div>
+
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                              <img src="static/istockphoto-949119664-612x612.jpg" class="img-responsive" alt="">
+
+                                   <div class="team-info">
+                                        <h3>Dr. Gaurav</h3>
+                                        <p>Dermatologist</p>
+                                        
+                                   </div>
+
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+<!--services-->
+<section id="services">
+ <div class="wrapper">
+	<h2>Our Services</h2>
+
+	
+	<div class="line"></div>
+	
+	<div class="single-service">
+	
+	
+		<div class="social"><i class="covid"></i></div>
+		<span></span>
+		<h3>Covid</h3>
+		<p>We provide the free covid detection using Chest CT-Scan test with high accuracy</p><br>
+		<a href="/covid"><button>Diagnosis</button></a>
+		
+	</div>
+	<div class="single-service">
+		<div class="social"><i class="brain"></i></div>
+		<span></span>
+		<h3>Brain Tumor</h3>
+		<p>we provide the free detection of brain tumor using MRI image with high accuracy</p><br>
+		<a href="/brain_tumor"><button>Diagnosis</button></a>
+	</div>
+	<div class="single-service">
+		<div class="social"><i class="Breast"></i></div>
+		<span></span>
+		<h3>Pneumonia</h3>
+		<p>we provide the free detection of Pneumonia using lung x-ray with high accuracy</p><br>
+		<a href="/pneumonia"><button>Diagnosis</button></a>
+	</div>
+	<div class="single-service">
+		<div class="social"><i class="skin"></i></div>
+		<span></span>
+		<h3>Skin Cancer</h3>
+		<p>we provide the free detection of skin cancer type using image of affected portion with high accuracy</p>
+		<a href="/skin_cancer"><button>Diagnosis</button></a>
+		
+	</div>
+	
+</section>
+
+     <!-- GOOGLE MAP -->
+     <section id="google-map">
+     <!-- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+	-->
+        <br><br><br> <hr> <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d113957.96764378405!2d85.91915039680845!3d26.802189996518354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x39ec143555526e31%3A0x741c8198976fe7e0!2sTarapatti%20Sirsiya%2045600%2C%20Nepal!3m2!1d26.802054!2d85.9891914!5e0!3m2!1sen!2snp!4v1621861827662!5m2!1sen!2snp" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+     </section>           
+
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
+                              <p>I Healthcare</p>
+							  <p>Janakpurdham, Nepal</p>
+
+                              <div class="contact-info">
+                                   <p><i class="fa fa-phone"></i> +977-9866192739</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">shahgk0000@gmail.com</a></p>
+                              </div>
+                         </div>
+                    </div>
+					
+					
+					 <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Our Services</h4>
+                              <p>Covid Detection</p>
+							  <p>Brain Tumor Detection</p>
+							  <p>Breast Cancer Detection</p>
+							  <p>Skin Cancer Type Classification</p>
+
+                              
+                         </div>
+                    </div>
+
+                   
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                                   <p>7 x 24 Hours</p>
+                              </div> 
+
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 border-top">
+                         <div class="col-md-4 col-sm-6">
+                              <div class="copyright-text"> 
+                                   <p>Copyright &copy; 2021 I Healthcare </p>
+                              </div>
+                         </div>
+                         <div class="col-md-6 col-sm-6">
+                              <div class="footer-link"> 
+                                   <a href="#services">Our Services</a>
+                                   <a href="#team">Our Doctors</a>
+                                   <a href="#about">About us</a>
+                                   <a href="#google-map">Contact us</a>
+								   <a href="https://docs.google.com/forms/d/1EQaRuvcG_gKq8Jg_-UURmyNrwexEfXRObolwbDp5Clg/edit">Send Feedback</a>
+                              </div>
+                         </div>
+                         <div class="col-md-2 col-sm-2 text-align-center">
+                              <div class="angle-up-btn"> 
+                                  <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+                              </div>
+                         </div>   
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+     <!-- SCRIPTS -->
+     <script src="static/jquery.js"></script>
+     <script src="static/bootstrap.min.js"></script>
+     <script src="static/jquery.sticky.js"></script>
+     <script src="static/jquery.stellar.min.js"></script>
+     <script src="static/wow.min.js"></script>
+     <script src="static/smoothscroll.js"></script>
+     <script src="static/owl.carousel.min.js"></script>
+     <script src="static/custom.js"></script>
+
+</body>
+</html>

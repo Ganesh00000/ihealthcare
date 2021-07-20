@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Covid-19</title>
+</head>
+<style>
+body
+{
+background-image:url("static/thi-coronavirus-series-2.jpg");
+}
+.disease
+{
+font-size:200%;
+color:white;
+font-family:sans-serif;
+padding-left:100px;
+padding-top:50px;
+}
+#myfile,button
+{
+padding:10px;
+font-size:50%;
+}
+a
+{
+text-decoration:none;
+color:white;
+}
+.pt
+{
+padding:10px;
+font-size:50%;
+padding-left:50px;
+border-radius:0.5em;
+}
+</style>
+
+<body id="bod">
+
+<div class="disease">
+<h1>COVID-19</h1>
+<p>LETS JOIN OUR EFFORTS TO COMPLY WITH<br>
+PREVENTION MEASURES FOR PERSONAL HEALTH,<br>
+AGAINST COVID SPREADING</p>
+<ul type="disc">
+<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Symptoms</a></li>
+<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">Prevention</a></li>
+</ul>
+<h5>INSERT YOUR LUNG CT-SCAN</h5>
+<form action="/predict_covid" method="POST" enctype="multipart/form-data">
+<input type="text" class="pt" name="pt_id" placeholder="Enter Patient ID"><br>
+
+<input type="file" id="myfile" name="myfile">
+<button type="submit">Generate Report</button>
+</form>
+</div>
+<script>
+var arr=["url('static/thi-coronavirus-series-2.jpg')","url('static/How-Contactless-and-Other-Modern-Payment-Methods-Can-Fight-the-Spread-of-COVID-19.jpg')",
+"url('static/2029069.jpg')","url('static/2296216.jpg')"];
+n=0;
+function change()
+{
+n++;
+if(n>arr.length)
+{
+n=0;
+}
+document.body.style.backgroundImage=arr[n];
+}
+setInterval(change,4000);
+</script>
+
+</body>
+</html>

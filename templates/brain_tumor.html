@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Brain Tumor</title>
+</head>
+<style>
+body
+{
+background-image:url("static/3-brain.jpg");
+}
+.disease
+{
+font-size:200%;
+color:white;
+font-family:sans-serif;
+padding-left:100px;
+padding-top:50px;
+}
+#myfile,button
+{
+padding:10px;
+font-size:50%;
+}
+a
+{
+text-decoration:none;
+color:white;}
+.pt
+{
+padding:10px;
+font-size:50%;
+padding-left:50px;
+border-radius:0.5em;
+}
+</style>
+
+<body id="bod">
+
+<div class="disease">
+<h1>BRAIN TUMOR</h1>
+<p>HOPE LOVE FAITH,<br>
+MAKES THINGS POSSIBLE, LETS<br>
+FIGHT AGAINST BRAIN TUMOR</p>
+<ul type="disc">
+<li><a href="https://www.cancer.net/cancer-types/brain-tumor/symptoms-and-signs">Symptoms</a></li>
+<li><a href="https://my.clevelandclinic.org/health/diseases/6149-brain-cancer-brain-tumor#:~:text=You%20cannot%20prevent%20a%20brain,and%20excessive%20exposure%20to%20radiation.">Prevention</a></li>
+</ul>
+<h5>INSERT YOUR BRAIN MRI IMAGE</h5>
+<form action="/predict_brain_tumor" method="POST" enctype="multipart/form-data">
+<input type="text" class="pt" name="pt_id" placeholder="Enter Patient ID"><br>
+<input type="file" id="myfile" name="myfile">
+<button type="submit">Generate Report</button>
+</form>
+</div>
+<script>
+var arr=["url('static/3-brain.jpg')","url('static/cEYZXG.jpg')",
+"url('static/Brain.jpg')","url('static/1322248440.jpg')"];
+n=0;
+function change()
+{
+n++;
+if(n>arr.length)
+{
+n=0;
+}
+document.body.style.backgroundImage=arr[n];
+}
+setInterval(change,4000);
+</script>
+</body>
+</html>

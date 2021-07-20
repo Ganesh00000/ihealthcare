@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Pneumonia</title>
+</head>
+<style>
+body
+{
+background-image:url("static/Streptococcus_pneumoniae_-_A_causative_bacteria_of_meningitis.jpg");
+}
+.disease
+{
+font-size:200%;
+color:white;
+font-family:sans-serif;
+padding-left:100px;
+padding-top:50px;
+}
+#myfile,button
+{
+padding:10px;
+font-size:50%;
+}
+a
+{
+text-decoration:none;
+color:white;
+}
+.pt
+{
+padding:10px;
+font-size:50%;
+padding-left:50px;
+border-radius:0.5em;
+}
+</style>
+
+<body id="bod">
+
+<div class="disease">
+<h1>PNEUMONIA</h1>
+<p>BE THANKFUL TO BR ALIVE, BREATHE<br> 
+AND GO EASY. TAKE CARE, STAY <br>
+HEALTHY AND BE SAFE</p>
+<ul type="disc">
+<li><a href="https://www.lung.org/lung-health-diseases/lung-disease-lookup/pneumonia/symptoms-and-diagnosis">Symptoms</a></li>
+<li><a href="https://www.lung.org/lung-health-diseases/lung-disease-lookup/pneumonia/preventing-pneumonia">Prevention</a></li>
+</ul>
+<h5>INSERT YOUR LUNG X-RAY HERE</h5>
+<form action="/predict_pneumonia" method="POST" enctype="multipart/form-data">
+<input type="text" class="pt" name="pt_id" placeholder="Enter Patient ID"><br>
+
+<input type="file" id="myfile" name="myfile">
+<button type="submit">Generate Report</button>
+</form>
+</div>
+<script>
+var arr=["url('static/Streptococcus_pneumoniae_-_A_causative_bacteria_of_meningitis.jpg')","url('static/Pathogens-causing-pneumonia.jpg')",
+"url('static/re001_pneumonia_hero_au.jpg')","url('static/348ad96520c84ff5bbeca8667129af0b.jpg')"];
+n=0;
+function change()
+{
+n++;
+if(n>arr.length)
+{
+n=0;
+}
+document.body.style.backgroundImage=arr[n];
+}
+setInterval(change,4000);
+</script>
+</body>
+</html>
